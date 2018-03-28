@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aulas de Javascript</title>
+
+    <script type="text/javascript"> 
+        /*variavel bonus declarado em cima,
+        é somada junto com o salário para
+        saber o valor total da diaria*/
+
+        var bonus;
+        function calculardiaria(salario, dias) {
+            bonus = 300;
+            return ((salario + bonus) / dias).toFixed(2);
+        }
+        var diaria = calculardiaria(5000, 30);
+        alert(diaria);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
