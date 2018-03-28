@@ -8,14 +8,20 @@
     <title>Aulas de Javascript</title>
 
     <script type="text/javascript"> 
-        /*Loop até i chegar a 10
-        Será incrementado 1 mais 1 até
-        atingir o valor 10 */
+        /*Diferente do caso anterior de só
+        usar o while, ele tem o DO que faz
+        o primeiro passo e só depois testa
+        
+        Usei o console.log para ver que o
+        i já vale 10 e ele executa primeiro
+        pra depois testar.*/
 
-        var i = 1;
-        while (i < 10) {
+        var i = 10;
+        do {
             i++;
-        }
+            console.log("Valor de i: " + i)
+        } while (i < 10)
+
     </script>
 
 </head>
