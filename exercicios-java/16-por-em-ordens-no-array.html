@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aulas de Javascript</title>
+
+    <script>
+        /* ordenação de palavras */
+        var salada = new Array();
+        salada[0] = "Uva";
+        salada[1] = "Abacaxi";
+        salada[2] = "Pêra";
+        salada[3] = "Maçã";
+        /* Vai colocar em ordem pelo conteúdo
+        e não mais pela posição definida*/
+        salada.sort();
+        console.log(salada);
+
+
+        //Outro tipo de ordenação abaixo:
+
+        /* criando o Array de números */
+        var megasena = [43, 10, 15, 20, 5, 9];
+
+        /* Função de ordenação para
+        números, de forma crescente */
+        function crescente(a, b) {
+            return a - b;
+        }
+        
+        /* Função de ordenação para
+        números, de forma decrescente */
+        function decrescente(a, b) {
+            return b - a;
+        }
+
+        /* puxando a função ordenar em sort */
+        megasena.sort(crescente);
+        console.log("Ordem crescente: " + megasena);
+        megasena.sort(decrescente);
+        console.log("Ordem decrescente: " + megasena);
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

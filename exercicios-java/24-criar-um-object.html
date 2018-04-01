@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aulas de Javascript</title>
+
+    <script>
+        var produto = new Object();
+
+        produto.nome = "Caneta";
+        produto.preco = 1.99;
+        produto.cor = "Azul";
+
+        /* Mostrar no console */
+        console.log("Nome: " + produto.nome);
+        console.log("Preço: " + produto.preco);
+        console.log("Cor: " + produto.cor);
+
+        /* Mostrar no popup */
+        function retornarinfo() {
+            return "Nome: " + this.nome + ", Valor: " + this.preco + ", Cor: " + this.cor;
+        }
+        
+        produto.info = retornarinfo;
+        alert(produto.info());
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

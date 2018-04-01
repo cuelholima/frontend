@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aulas de Javascript</title>
+
+    <script>
+        /* Dia Mes e Ano que está atualmente */
+        var meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+        var agora = new Date();
+        console.log(agora.getDate() + "/" + meses[agora.getMonth()] + "/" + agora.getFullYear());
+    
+        /* Descobrir o dia que nasceu:
+        0 = domingo, 1 = segunda, 2 = terça, 3 = quarta
+        4 = quinta, 5 = sexta, 6 = sábado */
+        // Ano normal, mês começa no 0, dia normal
+        var aniversario = new Date(1996,3,5);
+        console.log("Você nasceu no dia da semana: " + aniversario.getDay());
+
+
+        /* Horas */
+        // função pra acrescentar dois números
+        function doisdigitos(tempo) {
+            if (tempo <10 ) {
+                return "0" + tempo;
+            }
+            else {
+                return tempo;
+            }
+        }
+        
+        // mostrar o resultado das horas
+        console.log(doisdigitos(agora.getHours()) + ":" + doisdigitos(agora.getMinutes()) + ":" + doisdigitos(agora.getSeconds()));
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

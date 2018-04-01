@@ -8,15 +8,19 @@
     <title>Aulas de Javascript</title>
 
     <script>
-        /* Valores em um array */
 
-        var salada = new Array("Uva", "laranja", "Abacate");
-        console.log(salada);
+        var nome = "Matheus Henrique de Faria";
+        var primeira = ""
+        var letra = "";
 
-        /* Outra forma de array simples */
-
-        var frutas = ["Uva", "Maçã", "Pêra", "Goiaba"];
-        console.log(frutas);
+        var i = 0;
+        while (letra != " ") {
+            letra = nome.charAt(i);
+            primeira = nome.substr(0,i);
+            i++;
+        }
+        
+        console.log(primeira);
     </script>
 
 </head>

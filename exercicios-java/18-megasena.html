@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aulas de Javascript</title>
+
+    <script>
+
+        /* variavel para gerar os números convertidos */
+        var sorteio;
+        /* variavel para armazenar os numeros gerados */
+        var megasena = [];
+        
+        /* loop pra gerar os números */
+        var i = 0;
+        while (i < 6) {
+            sorteio = Math.ceil(Math.random() * 60);
+            /* Se for menor que zero é -1,só servirá
+            se for -1, pois é número não existe ainda */
+            if (megasena.indexOf(sorteio) < 0) {
+                megasena.push(sorteio);
+                i++;
+            }
+        }
+        
+        /* Função pra ordenar os numeros da megasena */
+        function ordenar(a,b){
+            return a-b;
+        }
+        
+        /* Chamando a variavel para executar a função */
+        megasena.sort(ordenar);
+        console.log(megasena);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
